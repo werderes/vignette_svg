@@ -1,0 +1,10 @@
+# Number of points on the star
+128
+# Height of the outside ellipse
+12
+# Width of the outside ellipse
+9
+# Height of the inside ellipse
+10
+# Width of the inside ellipse
+7.5

@@ -15,15 +15,14 @@ with open('consts.txt') as f:
 
 vertices = int(vertices)
 pointes = []
-dwg = svgwrite.Drawing('star.svg', profile='tiny')
-
+dwg = svgwrite.Drawing('star.svg', profile='tiny', size=(outside_ellipse_width*3.78, outside_ellipse_height*3.78))
 for z in range(vertices):
     t = z * 2 * math.pi / vertices
-    x1 = outside_ellipse_width * math.cos(t) / 2
-    y1 = outside_ellipse_height * math.sin(t) / 2
+    x1 = outside_ellipse_width * math.cos(t) / 2 + outside_ellipse_width/2
+    y1 = outside_ellipse_height * math.sin(t) / 2 + outside_ellipse_height/2
     t += math.pi / vertices
-    x2 = inside_ellipse_width * math.cos(t) / 2
-    y2 = inside_ellipse_height * math.sin(t) / 2
+    x2 = inside_ellipse_width * math.cos(t) / 2 + outside_ellipse_width/2
+    y2 = inside_ellipse_height * math.sin(t) / 2 + outside_ellipse_height/2
     t -= 2 * math.pi / vertices
     #x3 = inside_ellipse_width * math.cos(t) / 2
     #y3 = inside_ellipse_height * math.sin(t) / 2
