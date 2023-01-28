@@ -7,3 +7,5 @@ In output directory there is main.exe file you can use to generate .svg file wit
   - run main.exe
   - toothed elipse shape will be saved in star.svg
   - when import to photoshop change size to cm or inch
+
+![alt text](https://github.com/werderes/vignette_svg/star.svg
