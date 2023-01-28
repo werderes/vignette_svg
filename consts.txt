@@ -5,6 +5,6 @@
 # Width of the outside ellipse
 9
 # Height of the inside ellipse
-9
+10
 # Width of the inside ellipse
 7.5
