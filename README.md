@@ -1,6 +1,6 @@
 # vignette_svg
 
-Python script makes toothed elipse shape (russian vignette, vignette for victorian style photograpy) and save it to .svg file
+Python script generate toothed elipse shape (russian vignette, vignette for victorian style photograpy) and save it to .svg file
 
 In output directory there is main.exe file you can use to generate .svg file without python interpreter (Windows)
   - open consts.txt in Notepad and edit variables then save file
