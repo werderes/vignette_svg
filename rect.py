@@ -1,19 +1,14 @@
 import svgwrite
 import math
 
-#vertices = 96
-#outside_ellipse_height = 120
-#outside_ellipse_width = 100
-#inside_ellipse_height = 90
-#inside_ellipse_width = 75
 
 with open('consts_rects.txt') as f:
     lines = f.readlines()
     # A list containing the values of the constants
     consts = [float(line) for line in lines if not line.startswith('#')]
     x, y, z, o = consts
-import svgwrite
-
+x = int(x)
+y = int(y)
 def generate_rectangles(x, y, z, o):
     dwg = svgwrite.Drawing('rectangles.svg', profile='tiny')
     for i in range(x):
@@ -22,4 +17,4 @@ def generate_rectangles(x, y, z, o):
     dwg.save()
 
 # Example usage
-generate_rectangles(5, 7, 20, 10)
+generate_rectangles(x, y, z, o)

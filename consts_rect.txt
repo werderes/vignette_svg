@@ -1,8 +1,0 @@
-# columns
-5
-# rows
-7
-# rect size (mm)
-60
-# distance
-1
